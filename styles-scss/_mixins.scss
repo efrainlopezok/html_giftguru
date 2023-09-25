@@ -1,0 +1,24 @@
+// Mixins
+@mixin transition-effect {
+    transition: all 0.5s ease;
+}
+
+@mixin font-semibold {
+    font-family: "HelveticaNeueMedium";
+}
+
+@mixin d-flexbox($dir:row) {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -moz-flex-direction: $dir;
+    -webkit-flex-direction: $dir;
+    flex-flow: $dir;
+    flex-wrap: wrap;
+}

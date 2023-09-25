@@ -1,0 +1,135 @@
+.nowrap {
+    white-space: nowrap;
+}
+
+.row {
+    &.gutter-10 {
+        margin-left: -10px;
+        margin-right: -10px;
+        >div[class*="col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.semibold {
+    font-weight: 500;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.u-text {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.bg-light-gray {
+    background-color: $main_light_gray;
+}
+
+.spaces {
+    margin-bottom: 20px;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+        width: 100%;
+    }
+}
+
+.content-wrap-xs {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+        color: #606060;
+        font-weight: 600;
+        line-height: 21px;
+        font-size: 13px;
+        &.lead-text {
+            color: #3f474d;
+            font-family: $helvetica_bold;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.skip {
+    color: $main_green !important;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.86px;
+    text-decoration: underline;
+    font-family: "HelveticaNeueMedium";
+}
+
+.link-action {
+    display: block;
+    text-align: center;
+    max-width: 170px;
+    margin-left: auto;
+    font-size: 10px;
+    font-family: $helvetica_medium;
+    line-height: 20px;
+    letter-spacing: 1.43px;
+    text-decoration: underline;
+    margin-bottom: 2px;
+    .gray {
+        color: #73797F;
+    }
+}
+
+:focus {
+    outline: none !important;
+}
+
+.container {
+    width: 100%;
+    max-width: $desktop_size;
+    &.container-md {
+        max-width: $container_width;
+    }
+}
+
+section {
+    padding: 100px 0;
+    &.page {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+}
+
+
+/* Icons
+-----------------*/
+
+.c-icon {
+    font-weight: 400;
+    font-family: $font_family;
+    font-style: normal;
+    font-size: 22px;
+    &.c-close {
+        &:before {
+            display: inline-block;
+            content: "+";
+            transform: rotate(45deg);
+        }
+    }
+}

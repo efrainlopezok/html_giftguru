@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Home :: Gift Docket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom FontAwesome styles -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom SASS styles -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="scripts/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="home">
+
+    <header>
+      <div class="container">
+        <div class="top-header">
+          <!-- <ul class="top-menu">
+            <li><a href="#sign-in" data-toggle="modal" data-target="#sign">Sign In</a></li>
+            <li><a href="#sign-up" data-toggle="modal" data-target="#sign">Sign Up</a></li>
+          </ul> -->
+          <a class="main-logo" href="/">
+            <img src="http://gift-guru.com/wp-content/uploads/2017/11/new-logo.png" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#howitworks">How It Works</a></li>
+              <li><a href="#products">Brands</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- Top Space -->
+    <div class="init"></div>
+    <!-- / Top Space -->
+
+    <!-- Form Integration -->
+    <section id="integration" class="integration" style="padding: 30px 0;">
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          </div>
+        </div> -->
+        <div id="sign" class="sign-in-up">
+      <div class="modal-dialog" style="margin-top: 0px;">
+
+        <div class="modal-content">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#sign-in">Sign In</a></li>
+            <li><a data-toggle="tab" href="#sign-up">Sign Up</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="sign-in" class="tab-pane fade in active">
+              <div class="form-steps">
+                <!-- Step Start -->
+                <div class="step" data-step="sign-in">
+                  <a href="#" class="button facebook"><i class="fa fa-facebook"></i>Sign In with Facebook</a>
+                  <div class="line-through"><span>or</span></div>
+                  <form>
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Enter email address" />
+
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="······" />
+
+                    <div class="row">
+                      <div class="col-md-6"">
+                        <input id="remember" type="checkbox" name="remember" class="checkbox green" />
+                        <label for="remember">Remember me</label>
+                      </div>
+                      <div class="col-md-6"">
+                        <input type="submit" value="Login" class="button green little">
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="forgotten button-step" data-step="forgot-pass">Forgotten your password?</a>
+                </div>
+                <!-- /Step Start -->
+                <!-- Step Start -->
+                <div class="step hide" data-step="forgot-pass">
+                  <form>
+                    <p>Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Enter email address" />
+
+                    <div class="row">
+                      <div class="col-md-12"">
+                        <input type="submit" value="Login" class="button green little">
+                      </div>
+                      <div class="col-md-12"">
+                        <a href="#" class="forgotten button-step" data-step="sign-in">Back to login</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /Step Start -->
+              </div>
+            </div>
+            <div id="sign-up" class="tab-pane fade">
+              <a href="#" class="button facebook"><i class="fa fa-facebook"></i>Sign In with Facebook</a>
+              <div class="line-through"><span>or</span></div>
+              <form>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" placeholder="Enter email address" />
+
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="······" />
+
+                <div class="row">
+                  <div class="col-md-6"">
+                    <input id="agree" type="checkbox" name="agree" class="checkbox green" />
+                    <label for="agree">I agree to the terms & conditions</label>
+                  </div>
+                  <div class="col-md-6"">
+                    <input type="submit" value="Create Account" class="button green little">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      </div>
+    </section>
+    <!-- / Form Integratino -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="http://app.gift-guru.com/./img/logo_footer.png?v=1 class="logo" /></a>
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-12">
+            <ul class="footer-menu">
+              <li><a href="#howitworks">How It Works</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="faq.html">Faq</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12">
+            <ul class="copyright-menu">
+              <li><a href="./terms_and_conditions.html">Terms & Conditions</a></li>
+              <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+              <li>&copy; Gift Guru 2017</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Sing In -->
+    <div id="sign" class="modal fade sign-in-up">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#sign-in">Sign In</a></li>
+            <li><a data-toggle="tab" href="#sign-up">Sign Up</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="sign-in" class="tab-pane fade in active">
+              <div class="form-steps">
+                <!-- Step Start -->
+                <div class="step" data-step="sign-in">
+                  <a href="#" class="button facebook"><i class="fa fa-facebook"></i>Sign In with Facebook</a>
+                  <div class="line-through"><span>or</span></div>
+                  <form>
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Enter email address" />
+
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="······" />
+
+                    <div class="row">
+                      <div class="col-md-6"">
+                        <input id="remember" type="checkbox" name="remember" class="checkbox green" />
+                        <label for="remember">Remember me</label>
+                      </div>
+                      <div class="col-md-6"">
+                        <input type="submit" value="Login" class="button green little">
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="forgotten button-step" data-step="forgot-pass">Forgotten your password?</a>
+                </div>
+                <!-- /Step Start -->
+                <!-- Step Start -->
+                <div class="step hide" data-step="forgot-pass">
+                  <form>
+                    <p>Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Enter email address" />
+
+                    <div class="row">
+                      <div class="col-md-12"">
+                        <input type="submit" value="Login" class="button green little">
+                      </div>
+                      <div class="col-md-12"">
+                        <a href="#" class="forgotten button-step" data-step="sign-in">Back to login</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /Step Start -->
+              </div>
+            </div>
+            <div id="sign-up" class="tab-pane fade">
+              <a href="#" class="button facebook"><i class="fa fa-facebook"></i>Sign In with Facebook</a>
+              <div class="line-through"><span>or</span></div>
+              <form>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" placeholder="Enter email address" />
+
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="······" />
+
+                <div class="row">
+                  <div class="col-md-6"">
+                    <input id="agree" type="checkbox" name="agree" class="checkbox green" />
+                    <label for="agree">I agree to the terms & conditions</label>
+                  </div>
+                  <div class="col-md-6"">
+                    <input type="submit" value="Create Account" class="button green little">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- / Sign In -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')</script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="scripts/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/custom.js"></script>
+  </body>
+</html>

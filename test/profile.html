@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Profile :: Gift Docket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom FontAwesome styles -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom SASS styles -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="scripts/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="logged">
+
+	<header class="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 logo">
+					<a href="index.html">
+						<img src="./img/logo.png" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-12"><div class="row">
+					<div class="col-md-9 col-sm-9 col-xs-12 r-menu">
+						<nav class="navbar">
+						<div class="navbar-header">
+				            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				            </button>
+				        </div>
+						<div id="navbar" class="main-nav navbar-collapse collapse">
+							<ul  class="nav nav-pills">
+								<li><a href="./upcoming-events.html">Upcoming Events</a></li>
+								<li><a href="./my_recipients.html">My Recipients</a></li>
+								<li><a href="./my_events.html">My Events</a></li>
+								<li><a href="./gift_history.html">Gift History</a></li>
+								<li><a href="./brands.html">Brands</a></li>
+							</ul>
+						</div>
+						</nav>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12 m-profile">
+						<div class="user-info dropdown">
+							<a id="user-dropdown" href="#" class="user-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Johnn Doe <span class="caret"></span></a>
+							<ul class="dropdown-menu" aria-labelledby="user-dropdown">
+								<li><a href="profile.html">Profile</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="./index.html">Log Out</a></li>
+					        </ul>
+						</div>
+					</div>
+				</div></div> <!--End row and col -->
+			</div>
+		</div>
+		
+	</header>
+
+	<section class="sidebar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="breadcrumb">Your Profile</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 text-right">
+					<a href="#" class="btn btn-add"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add +</a>
+					<ul class="dropdown-menu" aria-labelledby="user-dropdown">
+						<li><a href="#" data-toggle="modal" data-target="#add-event">New Event</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#" data-toggle="modal" data-target="#add-recipient">New Recipient</a></li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<article class="page profile">
+		<div class="container">
+			<div class="page-content-text">
+				<h6 class="bold">John Doe</h6>
+				
+				<ul class="nav nav-tabs">
+	              <li class="active"><a data-toggle="tab" href="#account">Gift Ideas</a></li>
+	              <li><a data-toggle="tab" href="#interest">Gift History</a></li>
+	              <li><a data-toggle="tab" href="#preferences">Gift History</a></li>
+	            </ul>
+
+				<div class="tab-content">
+
+				  <div id="account" class="tab-pane fade in active">
+				    <div class="account-detail">
+				      <span>Name:</span>
+				      <span class="account-data">John Doe</span>
+				    </div>
+				    <div class="account-detail">
+				      <span>Email:</span>
+				      <span class="account-data">johndoe@email.com</span>
+				    </div>
+				  </div>
+
+				  <div id="interest" class="tab-pane fade">
+				  	<h6 class="bold">Personal Interest</h6>
+				  	<form>
+				  	<div class="row checkbox-button custom-interest">
+		              <div class="col-md-4 col-sm-4 col-xs-12">
+		              	<input type="checkbox" value="sports" name="sports" id="sports">
+		               	<label for="sports">Sports</label>
+
+		               	<input type="checkbox" value="improvement" name="improvement" id="improvement">
+		               	<label for="improvement">Home Improvement</label>
+
+		               	<input type="checkbox" value="automotive" name="automotive" id="automotive">
+		               	<label for="automotive">Automotive</label>
+
+		               	<input type="checkbox" value="gardening" name="gardening" id="gardening">
+		               	<label for="gardening">Gardening</label>
+		              </div>
+		              <div class="col-md-4 col-sm-4 col-xs-12">
+		               	<input type="checkbox" value="apparel" name="apparel" id="apparel">
+		               	<label for="apparel">Apparel</label>
+
+		               	<input type="checkbox" value="baby" name="baby" id="baby">
+		               	<label for="baby">Baby Gear</label>
+
+		               	<input type="checkbox" value="bath" name="bath" id="bath">
+		               	<label for="bath">Bath &amp; Body</label>
+
+		               	<input type="checkbox" value="outdoors" name="outdoors" id="outdoors">
+		               	<label for="outdoors">Outdoors</label>
+		              </div>
+		              <div class="col-md-4 col-sm-4 col-xs-12">
+		               	<input type="checkbox" value="technology" name="technology" id="technology">
+		               	<label for="technology">Technology</label>
+
+		               	<input type="checkbox" value="health" name="health" id="health">
+		               	<label for="health">Health &amp; Wellness</label>
+
+		               	<input type="checkbox" value="keepstakes" name="keepstakes" id="keepstakes">
+		               	<label for="keepstakes">Keepstakes</label>
+
+		               	<input type="checkbox" value="toys" name="toys" id="toys">
+		               	<label for="toys">Toys</label>
+		              </div>
+		            </div>
+		            <div class="add-interest">
+		              <p class="spaces"></p>
+		              <p>Add an Interest</p>
+		              <div class="row add-interest">
+		                <div class="col-md-10 col-sm-9 col-xs-8">
+		                  <input type="text" name="custom-interest" placeholder="Enter interest name">
+		                </div>
+		                <div class="col-md-2 col-sm-3 col-xs-4">
+		                  <a href="#" class="button green little add-custom-interest">Add</a>
+		                </div>
+		              </div>
+		          	</div>
+
+		          	<p class="spaces"></p>
+		          	<input type="submit" class="button blue little" value="Save" />
+
+		          	</form>
+				  </div>
+
+				  <div id="preferences" class="tab-pane fade">
+				  	<h6>Communication Preferences</h6>
+				  	<p>Notifications are organized by outreach type and will be will be sent via email and at the frequency defined below.</p>
+				  	<form>
+				  	<div class="data-table checkbox-table">
+			          <table class="table table-striped">
+			            <tbody>
+			              <tr>
+			                      <td><strong>Gift</strong></td>
+			                      <td><input type="checkbox" value="gift-4-week" name="gift-4-week" id="gift-4-week" />
+			              	  	  <label for="gift-4-week">4 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="gift-2-week" name="gift-2-week" id="gift-2-week" />
+			              	  	  <label for="gift-2-week">2 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="gift-1-week" name="gift-1-week" id="gift-1-week" />
+			              	  	  <label for="gift-1-week">1 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="gift-none" name="gift-none" id="gift-none" />
+			              	  	  <label for="gift-none">None</label></td>
+			                    </tr>
+
+			                    <tr>
+			                      <td><strong>Card</strong></td>
+			                      <td><input type="checkbox" value="card-4-week" name="card-4-week" id="card-4-week" />
+			              	  	  <label for="card-4-week">4 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="card-2-week" name="card-2-week" id="card-2-week" />
+			              	  	  <label for="card-2-week">2 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="card-1-week" name="card-1-week" id="card-1-week" />
+			              	  	  <label for="card-1-week">1 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="card-none" name="card-none" id="card-none" />
+			              	  	  <label for="card-none">None</label></td>
+			                    </tr>
+
+			                    <tr>
+			                      <td><strong>Call/Text/Visit </strong></td>
+			                      <td><input type="checkbox" value="call-1-day" name="call-1-day" id="call-1-day" />
+			              	  	  <label for="call-1-day">4 day</label></td>
+
+			              	  	  <td><input type="checkbox" value="call-day-of" name="call-day-of" id="call-day-of" />
+			              	  	  <label for="call-day-of">Day of</label></td>
+
+			              	  	  <td><input type="checkbox" value="call-none" name="call-none" id="call-none" />
+			              	  	  <label for="call-none">None</label></td>
+			                    </tr>
+			            </tbody>
+			          </table>
+			        </div>
+				  
+			      <p class="spaces"></p>
+				  <input type="submit" class="button blue little" value="Save" />
+
+				  </form>
+				</div>
+
+		    </div>
+		</div>
+	</article>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="./img/logo_footer.png" class="logo" /></a>
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-12">
+            <ul class="footer-menu">
+              <li><a href="./index.html#howitworks">How It Works</a></li>
+              <li><a href="./index.html#products">Products</a></li>
+              <li><a href="./index.html#blog">Blog</a></li>
+              <li><a href="./index.html#about">About</a></li>
+              <li><a href="./faq.html">Faq</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12">
+            <ul class="copyright-menu">
+              <li><a href="./terms_and_conditions.html">Terms & Conditions</a></li>
+              <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+              <li>&copy; Gift Docket 2017</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Add Event -->
+    <div id="add-event" class="modal fade modal-event">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title u-text">Add Event</h4>
+          </div>
+          <div class="form-steps">
+          	<form>
+          	  <!-- Step Start -->
+          	  <div class="step" data-step="create-event">
+	            <div class="modal-body">
+	              <h4 class="center">Create New Event</h4>
+	              <div class="row">
+	                <div class="col-md-6">
+	                  <label for="event-type">Event / Event Type</label>
+	                  <select id="event-type" name="event-type">
+	                  	<option value="">Select your event type</option>
+	                  	<option value="e-1">Event Type 1</option>
+	                  	<option value="e-2">Event Type 2</option>
+	                  	<option value="e-3">Event Type 3</option>
+	                  	<option value="e-4">Event Type 4</option>
+	                  </select>
+	                </div>
+	                <div class="col-md-6">
+	                </div>
+	              </div>
+
+	              <div class="row">
+	                <div class="col-md-6">
+	                  <label for="event-name">Event name</label>
+	                  <input type="text" id="event-name" name="event-name" />
+	                </div>
+	                <div class="col-md-6">
+	                  <label for="event-month">Event Date</label>
+	                  <div class="row">
+	                  	<div class="col-md-4">
+	                  	  <select id="event-month" name="event-month">
+	                  	  	<option value="">Month</option>
+	                  	  	<option value="01">January</option>
+	                  	  	<option value="02">February</option>
+	                  	  	<option value="03">March</option>
+	                  	  </select>
+	                  	</div>
+	                  	<div class="col-md-4">
+	                  	  <select id="event-day" name="event-day">
+	                  	  	<option value="">DD</option>
+	                  	  	<option value="01">01</option>
+	                  	  	<option value="02">02</option>
+	                  	  	<option value="03">03</option>
+	                  	  </select>
+	                  	</div>
+	                  	<div class="col-md-4">
+	                  	  <select id="event-year" name="event-year">
+	                  	  	<option value="">YYYY</option>
+	                  	  	<option value="2017">2017</option>
+	                  	  	<option value="2018">2018</option>
+	                  	  	<option value="2019">2019</option>
+	                  	  </select>
+	                  	</div>
+	                  </div>
+	                </div>
+	              </div>
+
+	              <label>Event Recurring</label>
+
+	              <div class="row select-radio">
+	                <div class="col-md-6">
+	                  <input type="radio" name="recurring-event" id="recurring-event" value="recurring" />
+	                  <label for="recurring-event" class="center">
+		                <span class="input-title u-text">
+		                  Recurring Event
+		                </span>
+		                <p>An event that repeats year after year. <span>Example: Birthday, Christmas, Wedding Anniversary</span></p>
+	                	</label>
+	                </div>
+	                <div class="col-md-6">
+	                  <input type="radio" name="recurring-event" id="one-time-event" value="one-time" />
+	                  <label for="one-time-event" class="center">
+	                    <span class="input-title u-text">
+	                  	One Time Event
+	                    </span>
+	                    <p>An event that occurs only once and does not repeat. <span>Example: Graduation, Baby Shower, Wedding</span></p>
+	                  </label>
+	                </div>
+	              </div>
+
+	              <div class="action-steps row">
+	              	<div class="col-md-6 left">
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <a href="#" class="button blue little button-step" data-step="recipient-event">Next</a>
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="recipient-event">
+	            <div class="modal-body">
+	              <h4 class="center">Add recipient(s) to event</h4>
+	              <div class="detail-c-event">
+	              	<div class="event">
+					  <div class="row">
+						<div class="date col-md-2">
+						  <div class="center">
+							<span class="month u-text">December</span>
+							<span class="day">25</span>
+						  </div>
+						</div>
+						<div class="event-info col-md-10">
+						  <div class="row">
+							<div class="col-md-6">
+							  <h6>Christmas</h6>
+							</div>
+							<div class="col-md-6">
+							  <div class="event-action text-right">
+							  	<span class="u-text">Recurring Event</span>
+								<a href="#" class="refresh"></a>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<div class="list-recipient">
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button white-b-green little left">Add to Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button white-b-green little left">Add to Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button white-b-green little left">Add to Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button green little left">Remove from Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button white-b-green little left">Add to Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button green little left">Remove from Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					  <!-- Action Recipient -->
+					  <div class="action-recipient">
+					  	<div class="row">
+					  	  <div class="col-md-8">
+					  	  	<div class="name-recipient">
+					  	  		Jim Smith
+					  	  	</div>
+					  	  </div>
+					  	  <div class="col-md-4">
+					  	  	<a href="#" class="button 	green little left">Remove from Event</a>
+					  	  </div>
+					  	</div>
+					  </div>
+					  <!-- / Action Recipient -->
+					</div>
+	              </div>
+	              
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-4 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="create-event">Back</a>
+	              	</div>
+	              	<div class="col-md-4 center">
+	              	  <a href="#">Create New Recipient</a>
+	              	</div>
+	              	<div class="col-md-4 right">
+	              	  <input type="submit" class="button blue little" value="Create Event">
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- / Add Event -->
+
+    <!-- Add Event MSG -->
+    <div id="add-event-msg" class="modal fade modal-msg">
+      <div class="modal-dialog">
+      	<h6>Event Created</h6>
+      	<p>Christmas has been created. It will now show on your "My Events" page.</p>
+      </div>
+    </div>
+    <!-- /Add Event MSG-->
+
+    <!-- Add Recipient -->
+    <div id="add-recipient" class="modal fade modal-event">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title u-text">Add Recipient</h4>
+          </div>
+          <div class="form-steps">
+          	<form>
+          	  <!-- Step Start -->
+          	  <div class="step" data-step="create-recipient">
+	            <div class="modal-body">
+	              <h4 class="center">Recipient Information</h4>
+	              <div class="popup-medium-size">
+		            <div class="row">
+		           	  <div class="col-md-12">
+		                <label for="recipient-name">Recipient Name</label>
+		                <input type="text" id="recipient-name" name="recipient-name" />
+		              </div>
+		            </div>
+		          
+	                <label>Relationship</label>
+
+	                <div class="row checkbox-medium">
+	                  <div class="col-md-4">
+	                  	<input type="checkbox" name="relation-husband" id="relation-husband" value="husband" />
+	                  	<label for="relation-husband">Husband</label>
+	                  	<input type="checkbox" name="relation-wife" id="relation-wife" value="wife" />
+	                  	<label for="relation-wife">Wife</label>
+	                  	<input type="checkbox" name="relation-father" id="relation-father" value="father" />
+	                  	<label for="relation-father">Father</label>
+	                  	<input type="checkbox" name="relation-mother" id="relation-mother" value="mother" />
+	                  	<label for="relation-mother">Mother</label>
+	                  </div>
+	                  <div class="col-md-4">
+	                    <input type="checkbox" name="relation-son" id="relation-son" value="son" />
+	                  	<label for="relation-son">Son</label>
+	                  	<input type="checkbox" name="relation-daughter" id="relation-daughter" value="daughter" />
+	                  	<label for="relation-daughter">Daughter</label>
+	                  	<input type="checkbox" name="relation-brother" id="relation-brother" value="brother" />
+	                  	<label for="relation-brother">Brother</label>
+	                  	<input type="checkbox" name="relation-sister" id="relation-sister" value="sister" />
+	                  	<label for="relation-sister">Sister</label>
+	                  </div>
+	                  <div class="col-md-4">
+	                  	<input type="checkbox" name="relation-friend" id="relation-friend" value="friend" />
+	                  	<label for="relation-friend">Friend</label>
+	                  	<input type="checkbox" name="relation-colleague" id="relation-colleague" value="colleague" />
+	                  	<label for="relation-colleague">Colleague</label>
+	                  	<input type="checkbox" name="relation-boyfriend" id="relation-boyfriend" value="boyfriend" />
+	                  	<label for="relation-boyfriend">Boyfriend</label>
+	                  	<input type="checkbox" name="relation-girlfriend" id="relation-girlfriend" value="girlfriend" />
+	                  	<label for="relation-girlfriend">Girlfriend</label>
+	                  	<input type="checkbox" name="relation-other" id="relation-other" value="other" />
+	                  	<label for="relation-other">Other</label>
+	                  </div>
+	                </div>
+	              </div>
+
+	              <div class="action-steps row">
+	              	<div class="col-md-6 left">
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <a href="#" class="button blue little button-step" data-step="enter-have-recipient">Next</a>
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="enter-have-recipient">
+	            <div class="modal-body">
+	              <h4 class="center">Recipient Information</h4>
+	              <div class="row center select-p-tag">
+	              	<div class="col-md-6">
+	              	  <div class="content-border">
+	              	    <h6 class="u-text">I want to enter my recipients details</h6>
+	              	  	<p>You will select from a list of predefined interests and/or have the ability to create custom interests.</p>
+	              	  	<a href="#" class="button blue little button-step" data-step="interest-recipient">I will enter my recipients details</a>
+	              	  </div>
+	              	</div>
+	              	<div class="col-md-6">
+	              	  <div class="content-border">
+	              	  	<h6 class="u-text">I want my recipient to enter their interest</h6>
+	              	  	<p>Your recipient will be sent an email with a link that will allow them to select their own interests by selecting from a list of predefined interests and/or have the ability to create custom interests</p>
+	              	  	<a href="#" class="button blue little button-step" data-step="email-recipient">Have recipients enter interest</a>
+	              	  </div>
+	              	</div>
+	              </div>
+
+	              <p class="spaces"></p>
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="create-recipient">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="interest-recipient">
+	            <div class="modal-body">
+	              <div class="popup-medium-size">
+	                <label>Add recipient interests</p>
+	                <div class="row checkbox-button custom-interest">
+		              <div class="col-md-4">
+		              	<input type="checkbox" value="sports" name="sports" id="sports">
+		               	<label for="sports">Sports</label>
+
+		               	<input type="checkbox" value="improvement" name="improvement" id="improvement">
+		               	<label for="improvement">Home Improvement</label>
+
+		               	<input type="checkbox" value="automotive" name="automotive" id="automotive">
+		               	<label for="automotive">Automotive</label>
+
+		               	<input type="checkbox" value="gardening" name="gardening" id="gardening">
+		               	<label for="gardening">Gardening</label>
+		              </div>
+		              <div class="col-md-4">
+		               	<input type="checkbox" value="apparel" name="apparel" id="apparel">
+		               	<label for="apparel">Apparel</label>
+
+		               	<input type="checkbox" value="baby" name="baby" id="baby">
+		               	<label for="baby">Baby Gear</label>
+
+		               	<input type="checkbox" value="bath" name="bath" id="bath">
+		               	<label for="bath">Bath &amp; Body</label>
+
+		               	<input type="checkbox" value="outdoors" name="outdoors" id="outdoors">
+		               	<label for="outdoors">Outdoors</label>
+		              </div>
+		              <div class="col-md-4">
+		               	<input type="checkbox" value="technology" name="technology" id="technology">
+		               	<label for="technology">Technology</label>
+
+		               	<input type="checkbox" value="health" name="health" id="health">
+		               	<label for="health">Health &amp; Wellness</label>
+
+		               	<input type="checkbox" value="keepstakes" name="keepstakes" id="keepstakes">
+		               	<label for="keepstakes">Keepstakes</label>
+
+		               	<input type="checkbox" value="toys" name="toys" id="toys">
+		               	<label for="toys">Toys</label>
+		              </div>
+		            </div>
+		          		
+		          	<div class="add-interest">
+		              
+		              <p>Add an Interest</p>
+
+		              <div class="row add-interest">
+		                <div class="col-md-10">
+		                  <input type="text" name="custom-interest" placeholder="Enter interest name">
+		                </div>
+		                <div class="col-md-2">
+		                  <a href="#" class="button green little add-custom-interest">Add</a>
+		                </div>
+		              </div>
+		          	</div>
+		          </div>
+	              
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="enter-have-recipient">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <a href="#" class="button blue little little button-step" data-step="email-recipient">Next</a>
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="email-recipient">
+	            <div class="modal-body">
+	              <div class="popup-medium-size">
+	                <h4 class="center">Enter recipient email address</h4>
+	                <p class="center">Your recipient will receive an email containing a link where they can enter their interests.</p>
+	                <p class="spaces"></p>
+	                <div class="row">
+		              <div class="col-md-12">
+		                <label for="email-interest">Recipient Email Address</label>
+		                <input type="text" name="email-interest" id="email-interest" placeholder="Enter email address">
+		              </div>
+		            </div>
+		          </div>
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="enter-have-recipient">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <a href="#" class="button blue little little button-step" data-step="event-recipient">Next</a>
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="event-recipient">
+	            <div class="modal-body">
+	              <h4 class="center">Add recipient event</h4>
+	              <p class="spaces"></p>
+	              <div class="popup-little-size">
+	                <div class="select-button">
+	              	  <a href="#" class="button green little button-step" data-step="recipient-exist-event">Add recipient to existing event</a>
+	              	  <a href="#" class="button green little button-step" data-step="recipient-create-event">Add recipient to new event</a>
+	              	  <a href="#" class="skip u-text">Skip this step & create recipient</a>
+	              	</div>
+	              </div>
+
+	              <p class="spaces"></p>
+	              <p class="spaces"></p>
+	              <p class="spaces"></p>
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="create-recipient">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="recipient-exist-event">
+	            <div class="modal-body">
+	              <h4 class="center">Add recipient to exist event(s)</h4>
+	              <div class="detail-c-event r-event">
+	              	<!-- Event -->
+	              	<div class="event">
+					  <div class="row">
+						<div class="date col-md-2 col-sm-2 col-xs-4">
+						  <div class="center">
+							<span class="month u-text">November</span>
+							<span class="day">24</span>
+						  </div>
+						</div>
+						<div class="r-event-info col-md-10 col-sm-10 col-xs-8">
+						  <div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+							  <h6>Jim's Birthday</h6>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 right">
+							  <a href="#" class="button green little">Remove from Event</a>
+							</div>
+						  </div>
+
+						  <!-- Detail -->
+						  <div class="event-info-detail">
+						    <div class="row">
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Spending Price Range</h4>
+						      	<div class="row">
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="min-price">Minimun Price</label>
+						      		<input type="text" id="min-price" name="min-price" value="$10.00" />
+						      	  </div>
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="max-price">Maximun Price</label>
+						      		<input type="text" id="max-price" name="max-price" value="$25.00" />
+						      	  </div>
+						      	</div>
+						      </div>
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Outreach Type</h4>
+						      	<div class="row">
+						      	  <div class="col-md-12 col-sm-12 col-xs-12">
+
+						      		<input type="checkbox" id="outreach-gift" name="outreach-gift" value="gift" />
+						      		<label for="outreach-gift">Gift</label>
+
+						      		<input type="checkbox" id="outreach-card" name="outreach-card" value="card" />
+						      		<label for="outreach-card">Card</label>
+
+						      		<input type="checkbox" id="outreach-txtmsg" name="outreach-txtmsg" value="text-message" />
+						      		<label for="outreach-txtmsg">Call/Text/Visit</label>
+						      		
+						      	  </div>
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <!-- /Detail -->
+						</div>
+					  </div>
+					</div>
+					<!-- /Event -->
+
+					<!-- Event -->
+	              	<div class="event">
+					  <div class="row">
+						<div class="date col-md-2 col-sm-2 col-xs-4">
+						  <div class="center">
+							<span class="month u-text">December</span>
+							<span class="day">3</span>
+						  </div>
+						</div>
+						<div class="r-event-info col-md-10 col-sm-10 col-xs-8">
+						  <div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+							  <h6>Wedding Anniversary</h6>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 right">
+							  <a href="#" class="button white-b-green little">Add to Event</a>
+							</div>
+						  </div>
+
+						  <!-- Detail -->
+						  <div class="event-info-detail" style="display: none;">
+						    <div class="row">
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Spending Price Range</h4>
+						      	<div class="row">
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="min-price">Minimun Price</label>
+						      		<input type="text" id="min-price" name="min-price" value="$10.00" />
+						      	  </div>
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="max-price">Maximun Price</label>
+						      		<input type="text" id="max-price" name="max-price" value="$25.00" />
+						      	  </div>
+						      	</div>
+						      </div>
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Outreach Type</h4>
+						      	<div class="row">
+						      	  <div class="col-md-12 col-sm-12 col-xs-12">
+						      	  
+						      		<input type="checkbox" id="outreach-gift1" name="outreach-gift1" value="gift" />
+						      		<label for="outreach-gift1">Gift</label>
+
+						      		<input type="checkbox" id="outreach-card1" name="outreach-card1" value="card" />
+						      		<label for="outreach-card1">Card</label>
+
+						      		<input type="checkbox" id="outreach-txtmsg1" name="outreach-txtmsg1" value="text-message" />
+						      		<label for="outreach-txtmsg1">Call/Text/Visit</label>
+						      		
+						      	  </div>
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <!-- /Detail -->
+						</div>
+					  </div>
+					</div>
+					<!-- /Event -->
+
+					<!-- Event -->
+	              	<div class="event">
+					  <div class="row">
+						<div class="date col-md-2 col-sm-2 col-xs-4">
+						  <div class="center">
+							<span class="month u-text">December</span>
+							<span class="day">25</span>
+						  </div>
+						</div>
+						<div class="r-event-info col-md-10 col-sm-10 col-xs-8">
+						  <div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+							  <h6>Christmas</h6>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 right">
+							  <a href="#" class="button white-b-green little">Add to Event</a>
+							</div>
+						  </div>
+
+						  <!-- Detail -->
+						  <div class="event-info-detail" style="display: none;">
+						    <div class="row">
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Spending Price Range</h4>
+						      	<div class="row">
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="min-price">Minimun Price</label>
+						      		<input type="text" id="min-price" name="min-price" value="$10.00" />
+						      	  </div>
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="max-price">Maximun Price</label>
+						      		<input type="text" id="max-price" name="max-price" value="$25.00" />
+						      	  </div>
+						      	</div>
+						      </div>
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Outreach Type</h4>
+						      	<div class="row">
+						      	  <div class="col-md-12 col-sm-12 col-xs-12">
+						      	  
+						      		<input type="checkbox" id="outreach-gift2" name="outreach-gift2" value="gift" />
+						      		<label for="outreach-gift2">Gift</label>
+
+						      		<input type="checkbox" id="outreach-card2" name="outreach-card2" value="card" />
+						      		<label for="outreach-card2">Card</label>
+
+						      		<input type="checkbox" id="outreach-txtmsg2" name="outreach-txtmsg2" value="text-message" />
+						      		<label for="outreach-txtmsg2">Call/Text/Visit</label>
+						      		
+						      	  </div>
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <!-- /Detail -->
+						</div>
+					  </div>
+					</div>
+					<!-- /Event -->
+
+					<!-- Event -->
+	              	<div class="event">
+					  <div class="row">
+						<div class="date col-md-2 col-sm-2 col-xs-4">
+						  <div class="center">
+							<span class="month u-text">January</span>
+							<span class="day">24</span>
+						  </div>
+						</div>
+						<div class="r-event-info col-md-10 col-sm-10 col-xs-8">
+						  <div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+							  <h6>Jimmy's Birthday</h6>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 right">
+							  <a href="#" class="button white-b-green little">Add to Event</a>
+							</div>
+						  </div>
+
+						  <!-- Detail -->
+						  <div class="event-info-detail" style="display: none;">
+						    <div class="row">
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Spending Price Range</h4>
+						      	<div class="row">
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="min-price">Minimun Price</label>
+						      		<input type="text" id="min-price" name="min-price" value="$10.00" />
+						      	  </div>
+						      	  <div class="col-md-6 col-sm-6 col-xs-12">
+						      		<label for="max-price">Maximun Price</label>
+						      		<input type="text" id="max-price" name="max-price" value="$25.00" />
+						      	  </div>
+						      	</div>
+						      </div>
+						      <div class="col-md-6 col-sm-6 col-xs-12">
+						      	<h4 class="u-text">Outreach Type</h4>
+						      	<div class="row">
+						      	  <div class="col-md-12 col-sm-12 col-xs-12">
+						      	  
+						      		<input type="checkbox" id="outreach-gift3" name="outreach-gift3" value="gift" />
+						      		<label for="outreach-gift3">Gift</label>
+
+						      		<input type="checkbox" id="outreach-card3" name="outreach-card3" value="card" />
+						      		<label for="outreach-card3">Card</label>
+
+						      		<input type="checkbox" id="outreach-txtmsg3" name="outreach-txtmsg3" value="text-message" />
+						      		<label for="outreach-txtmsg3">Call/Text/Visit</label>
+						      		
+						      	  </div>
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <!-- /Detail -->
+						</div>
+					  </div>
+					</div>
+					<!-- /Event -->
+
+	              </div>
+	              
+	              <p class="spaces"></p>
+	              <p class="spaces"></p>
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="event-recipient">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <input type="submit" class="button blue little" value="Finish">
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="recipient-create-event">
+	            <div class="modal-body">
+	              <h4 class="center">Create New Event</h4>
+	              <div class="row">
+	                <div class="col-md-6">
+	                  <label for="event-type">Event / Event Type</label>
+	                  <select id="event-type" name="event-type">
+	                  	<option value="">Select your event type</option>
+	                  	<option value="e-1">Event Type 1</option>
+	                  	<option value="e-2">Event Type 2</option>
+	                  	<option value="e-3">Event Type 3</option>
+	                  	<option value="e-4">Event Type 4</option>
+	                  </select>
+	                </div>
+	                <div class="col-md-6">
+	                </div>
+	              </div>
+
+	              <div class="row">
+	                <div class="col-md-6">
+	                  <label for="event-name">Event name</label>
+	                  <input type="text" id="event-name" name="event-name" />
+	                </div>
+	                <div class="col-md-6">
+	                  <label for="event-month">Event Date</label>
+	                  <div class="row">
+	                  	<div class="col-md-4">
+	                  	  <select id="event-month" name="event-month">
+	                  	  	<option value="">Month</option>
+	                  	  	<option value="01">January</option>
+	                  	  	<option value="02">February</option>
+	                  	  	<option value="03">March</option>
+	                  	  </select>
+	                  	</div>
+	                  	<div class="col-md-4">
+	                  	  <select id="event-day" name="event-day">
+	                  	  	<option value="">DD</option>
+	                  	  	<option value="01">01</option>
+	                  	  	<option value="02">02</option>
+	                  	  	<option value="03">03</option>
+	                  	  </select>
+	                  	</div>
+	                  	<div class="col-md-4">
+	                  	  <select id="event-year" name="event-year">
+	                  	  	<option value="">YYYY</option>
+	                  	  	<option value="2017">2017</option>
+	                  	  	<option value="2018">2018</option>
+	                  	  	<option value="2019">2019</option>
+	                  	  </select>
+	                  	</div>
+	                  </div>
+	                </div>
+	              </div>
+
+	              <label>Event Recurring</label>
+
+	              <div class="row select-radio">
+	                <div class="col-md-6">
+	                  <input type="radio" name="recurring-event-recipient" id="recurring-event-recipient" value="recurring" />
+	                  <label for="recurring-event-recipient" class="center">
+		                <span class="input-title u-text">
+		                  Recurring Event
+		                </span>
+		                <p>An event that repeats year after year. <span>Example: Birthday, Christmas, Wedding Anniversary</span></p>
+	                	</label>
+	                </div>
+	                <div class="col-md-6">
+	                  <input type="radio" name="recurring-event-recipient" id="one-time-event-recipient" value="one-time" />
+	                  <label for="one-time-event-recipient" class="center">
+	                    <span class="input-title u-text">
+	                  	One Time Event
+	                    </span>
+	                    <p>An event that occurs only once and does not repeat. <span>Example: Graduation, Baby Shower, Wedding</span></p>
+	                  </label>
+	                </div>
+	              </div>
+
+	              <div class="action-steps row">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="event-recipient">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <a href="#" class="button blue little button-step" data-step="create-new-recipient-event">Next</a>
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="create-new-recipient-event">
+	            <div class="modal-body">
+	              <h4 class="center">Create new event</h4>
+	              <div class="detail-c-event">
+	              	<div class="event">
+					  <div class="row">
+						<div class="date col-md-2">
+						  <div class="center">
+							<span class="month u-text">November</span>
+							<span class="day">24</span>
+						  </div>
+						</div>
+						<div class="r-event-info col-md-10">
+						  <div class="row">
+							<div class="col-md-6">
+							  <h6>Jim’s Birthday</h6>
+							</div>
+							<div class="col-md-6">
+							  <div class="event-action text-right">
+							  	<span class="u-text">Recurring Event</span>
+								<a href="#" class="refresh"></a>
+							  </div>
+							</div>
+						  </div>
+						  <!-- Detail -->
+						  <div class="event-info-detail">
+						    <div class="row">
+						      <div class="col-md-6">
+						      	<h4 class="u-text">Spending Price Range</h4>
+						      	<div class="row">
+						      	  <div class="col-md-6">
+						      		<label for="min-price-n">Minimun Price</label>
+						      		<input type="text" id="min-price-n" name="min-price-n" value="$10.00">
+						      	  </div>
+						      	  <div class="col-md-6">
+						      		<label for="max-price-n">Maximun Price</label>
+						      		<input type="text" id="max-price-n" name="max-price-n" value="$25.00">
+						      	  </div>
+						      	</div>
+						      </div>
+						      <div class="col-md-6">
+						      	<h4 class="u-text">Outreach Type</h4>
+						      	<div class="row">
+						      	  <div class="col-md-12 col-sm-12 col-xs-12">
+						      	  
+						      		<input type="checkbox" id="outreach-gift5" name="outreach-gift5" value="gift" />
+						      		<label for="outreach-gift5">Gift</label>
+
+						      		<input type="checkbox" id="outreach-card5" name="outreach-card5" value="card" />
+						      		<label for="outreach-card5">Card</label>
+
+						      		<input type="checkbox" id="outreach-txtmsg5" name="outreach-txtmsg5" value="text-message" />
+						      		<label for="outreach-txtmsg5">Call/Text/Visit</label>
+						      		
+						      	  </div>
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <!-- /Detail -->
+						</div>
+					  </div>
+					</div>
+					
+	              </div>
+	              
+
+	              <div class="row action-steps ">
+	              	<div class="col-md-6 left">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="recipient-create-event">Back</a>
+	              	</div>
+	              	<div class="col-md-6 right">
+	              	  <input type="submit" class="button blue little" value="Finish">
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- / Add Recipient -->
+
+    <!-- Add Recipient MSG -->
+    <div id="add-recipient-msg" class="modal fade modal-msg">
+      <div class="modal-dialog">
+      	<h6>Recipient Created</h6>
+      	<p>Jim Jones has been created. They will now show on your "My Recipients" page.</p>
+      </div>
+    </div>
+    <!-- /Add Event MSG-->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')</script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="scripts/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/custom.js"></script>
+
+    <!-- Custom New Account Script -->
+    <script>
+		jQuery('#add-event input[type="submit"]').click(function(event){
+			event.preventDefault();
+			jQuery('#add-event').modal('hide');
+			jQuery('#add-event-msg').modal('show');
+			setTimeout(function(){
+			  jQuery('#add-event-msg').modal('hide');
+			}, 3000);
+		});
+
+		jQuery('#add-recipient input[type="submit"]').click(function(event){
+			event.preventDefault();
+			jQuery('#add-recipient').modal('hide');
+			jQuery('#add-recipient-msg').modal('show');
+			setTimeout(function(){
+			  jQuery('#add-recipient-msg').modal('hide');
+			}, 3000);
+		});
+    </script>
+  </body>
+</html>

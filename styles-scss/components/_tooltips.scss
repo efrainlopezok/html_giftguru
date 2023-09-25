@@ -1,0 +1,63 @@
+/* Tooltip and popover messages override */
+
+$tooltip_bg_color:		#74797f;
+$popover_bg_color:		#3f454c;
+
+.jBox-Tooltip .jBox-container, 
+.jBox-Mouse .jBox-container {
+    padding: 3px 7px;
+}
+
+.tooltip {
+	opacity: 1;
+	.tooltip-inner {
+		background-color: $tooltip_bg_color;
+	}
+	&.right {
+		.tooltip-arrow {
+			border-right-color: $tooltip_bg_color;
+		}
+	}
+	&.left {
+		.tooltip-arrow {
+			border-left-color: $tooltip_bg_color;
+		}
+	}
+	&.bottom {
+		left: 200px;
+		.tooltip-arrow {
+			left: -300px;
+			margin-left: 0;
+			border-bottom-color: $tooltip_bg_color;
+		}
+	}
+	&.top {
+		.tooltip-arrow {
+			border-top-color: $tooltip_bg_color;
+		}
+	}
+}
+
+.popover {
+	background: $popover_bg_color;
+	border-radius: 0;
+	border-top: 2px solid #4889c9;
+    color: #fff;
+    padding: 15px 15px 14px 15px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: "HelveticaNeueRoman";
+	box-shadow: none;
+
+	h3 {
+		display: none;
+	}
+	.arrow {
+		visibility:hidden;
+	}
+	.popover-content {
+		margin: 0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,147 @@
+
+
+.faq {
+	margin-bottom: 80px;
+
+	&.page-hero {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&.page-content {
+		padding-top: 100px;
+
+		&.faq-page-content-article {
+			padding-top: 52px;
+		}
+	}
+
+	.faq-topic,
+	.faq-results {
+		font-family: $helvetica_regular;
+		h4 {
+			font-family: $helvetica_regular;
+			text-align: center;
+			background: #f0f2f3;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			font-size: 14px;
+			line-height: 14px;
+			margin: 0 0 25px 0;
+			letter-spacing: 1.83px;
+
+			span {
+				color: $main_green;
+			}
+		}
+
+		p {
+			margin-bottom: 20px;
+			line-height: 1.5em;
+		}
+
+		a {
+			font-size: 15px;
+		}
+	}
+
+	.faq-results {
+		font-family: $helvetica_regular;
+		h4 {
+			text-align: left;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.result-content {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+
+	.form-search {
+		.row {
+			div:first-child {
+				padding-right: 0;
+			}
+			div:nth-child(2) {
+				padding-left: 10px;
+			}
+		}
+		input[type="text"] {
+			font-size: 13px;
+			line-height: 13px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			height: auto;
+			background-color: white;
+			margin-bottom: 0;
+		}
+		.button {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	&.page-hero {
+		.container {
+			position: relative;
+		}
+	}
+
+	.faq-container {
+		max-width: 772px;
+		margin: 0 auto;
+		font-family: $helvetica_regular;
+
+		p {
+			color: #3e454c;
+		}
+	}
+
+	.faq-results-container {
+		max-width: 630px;
+		margin: 0 auto;
+		font-family: $helvetica_regular;
+		p {
+			margin-bottom: 20px;
+			color: #3e454c;
+		}
+	}
+
+	.article {
+		h6 {
+			font-family: $helvetica_light;
+			margin-bottom: 46px;
+		}
+		p {
+			font-size: 14px;
+			font-family: $helvetica_regular;
+			line-height: 1.5em;
+			color: #73787f;
+			margin-bottom: 1.8em;
+		}
+	}
+}
+
+/* Common Hero and Faq elements  */
+.page-hero {
+	.back-page-link {
+		position: absolute;
+		top: 12px;
+		left: -260px;
+		font-size: 13px;
+		font-family: $helvetica_bold;
+		color: #fffefe !important;
+		padding-left: 30px;
+
+		img {
+			margin-right: 10px;
+			position: absolute;
+		    top: -2px;
+		    left: 0px;
+		    max-width: 22px;
+    		height: auto;
+		}
+	}
+}
+

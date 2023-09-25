@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>My Recipients Overview :: Gift Guru</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom FontAwesome styles -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom SASS styles -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="scripts/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="logged">
+
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 logo">
+                    <a href="index.html">
+                        <img src="./img/giftguru-logo.png" />
+                    </a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-12 r-menu">
+                            <nav class="navbar">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				            </button>
+                                </div>
+                                <div id="navbar" class="main-nav navbar-collapse collapse">
+                                    <ul class="nav nav-pills">
+                                        <li><a href="#">Upcoming Events</a></li>
+                                        <li class="active"><a href="#">My Recipients</a></li>
+                                        <li><a href="#">My Events</a></li>
+                                        <li><a href="#">My Chart</a></li>
+                                        <li><a href="#">Gift History</a></li>
+                                        <li><a href="#">Brands</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 m-profile">
+                            <div class="user-info dropdown">
+                                <a id="user-dropdown" href="#" class="user-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Johnn Doe <span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="user-dropdown">
+                                    <li><a href="#">Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End row and col -->
+            </div>
+        </div>
+
+    </header>
+
+    <section class="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="breadcrumb">My Recipients</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                    <a href="#" class="btn btn-add" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Add +</a>
+                    <ul class="dropdown-menu" aria-labelledby="user-dropdown">
+                        <li><a href="#" data-toggle="modal" data-target="#add-event">New Event</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#" data-toggle="modal" data-target="#add-recipient">New Recipient</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page">
+        <div class="container new-add-event">
+            <div class="new-event-content">
+                <div class="add-event-content ss-events-filter">
+                    <div class="form-steps">
+                        <form>
+                            <!-- Step Start -->
+                            <div class="step" data-step="create-event">
+                                <div class="add-event-body">
+
+                                    <div class="create-recipient">
+                                        <div class="body-recipient recipient-overview">
+                                            <div class="detail-c-event">
+                                                <div class="event-filter-responsive">
+                                                    <a href="#" class="new-event">
+                                                                Add a New Recipient
+                                                                <i class="fa fa-plus"></i>
+                                                            </a>
+                                                </div>
+                                                <p></p>
+                                                <div class="event">
+                                                    <div class="row">
+                                                        <div class="event-info event-info-open responsive-info add-interest col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                                                    <h6>Thoma's Doggington</h6>
+                                                                    <span class="sub-title">FATHER-IN-LAW</span>
+                                                                    <span class="sub-title event-date">NOV-14</span>
+
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                                    <div class="right text-right">
+                                                                        <i class="fa fa-angle-up"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event">
+                                                    <div class="row mb-s">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 full-borders">
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-sm-6 col-xs-6 text-left">
+                                                                    <strong>EILEEN SMITH</strong><br> MOTHER
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6 col-xs-6 text-right">
+                                                                    <img src="./img/icon-gift.png">
+                                                                    <img src="./img/icon-message.png">
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-12 col-xs-12 sm-hide"><a class="button white-b-green little button-full" style="display:inline-block;margin-left:25px;">View Event</a></div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-sm-6 col-xs-6 text-left">
+                                                                    <strong>DANIEL SMITH</strong><br> FATHER
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6 col-xs-6 text-right">
+                                                                    <img src="./img/icon-gift.png">
+                                                                    <img src="./img/icon-rose.png">
+                                                                    <img src="./img/icon-message.png">
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-12 col-xs-12 sm-hide"><a class="button white-b-green little button-full" style="display:inline-block;margin-left:25px;">View Event</a></div>
+                                                            </div>
+                                                            <div class="row gray-block">
+                                                                <div class="col-md-11 col-sm-11 col-xs-11 text-left">
+                                                                    Add Another Recipient to this Event
+                                                                </div>
+                                                                <div class="col-md-1 col-sm-1 col-xs-1 text-right recommended-list" style="clear:none;margin-top:0;border:none;padding:0 0px; margin-right: 10px;">
+                                                                    <a href="" class="action-green">+</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p></p>
+
+                                                <div class="event">
+                                                    <div class="row">
+                                                        <div class="event-info responsive-info add-interest col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                                                    <h6>Sandy Errington</h6>
+                                                                    <span class="sub-title">FRIEND</span>
+                                                                    <span class="sub-title event-date">JAN-09</span>
+
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                                    <div class="right text-right">
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p></p>
+
+                                                <div class="event">
+                                                    <div class="row">
+                                                        <div class="event-info responsive-info add-interest col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                                                    <h6>Drew Girroud</h6>
+                                                                    <span class="sub-title">BROTHER</span>
+                                                                    <span class="sub-title event-date"></span>
+
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                                    <div class="right text-right">
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p></p>
+
+                                                <div class="event">
+                                                    <div class="row">
+                                                        <div class="event-info responsive-info add-interest col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                                                    <h6>John Kouyate</h6>
+                                                                    <span class="sub-title">FATHER</span>
+                                                                    <span class="sub-title event-date">JAN-09</span>
+
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                                    <div class="right text-right">
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p></p>
+
+                                                <div class="event">
+                                                    <div class="row">
+                                                        <div class="event-info responsive-info add-interest col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                                                    <h6>Isabel Masuaku</h6>
+                                                                    <span class="sub-title">SISTER</span>
+                                                                    <span class="sub-title event-date">MAR-05</span>
+
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                                    <div class="right text-right">
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p></p>
+
+                                                <div class="event">
+                                                    <div class="row">
+                                                        <div class="event-info responsive-info add-interest col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                                                    <h6>Mia Noble</h6>
+                                                                    <span class="sub-title">FRIEND</span>
+                                                                    <span class="sub-title event-date">NOV-28</span>
+
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                                    <div class="right text-right">
+                                                                        <i class="fa fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /Step Start -->
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="index.html"><img src="./img/giftguru-logo.png" class="logo" /></a>
+                </div>
+                <div class="col-md-6 col-sm-8 col-xs-12">
+                    <ul class="footer-menu">
+                        <li><a href="./index.html#howitworks">How It Works</a></li>
+                        <li><a href="./index.html#products">Products</a></li>
+                        <li><a href="./index.html#blog">Blog</a></li>
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./faq.html">Faq</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul class="copyright-menu">
+                        <li><a href="./terms_and_conditions.html">Terms & Conditions</a></li>
+                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                        <li>&copy; Gift Guru 2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')
+    </script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+    <!-- Slick Slider -->
+    <script src="scripts/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/custom.js"></script>
+</body>
+
+</html>

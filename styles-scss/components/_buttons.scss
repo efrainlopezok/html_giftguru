@@ -1,0 +1,76 @@
+/** Buttons */
+
+
+/* Override default bootstrap buttons */
+
+.btn {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 30px;
+    color: $btn_view_opt_color;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid $btn_view_opt_color;
+    @include transition-effect;
+}
+
+.btn-primary {
+    background: $btn_primary_bg;
+    border: 0 none;
+    padding: 11px 50px;
+    color: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: darken($btn_primary_bg, 10%);
+}
+
+
+/* Logged pages buttons*/
+
+.btn-add,
+.btn-close,
+a.btn-add {
+    border: 1px solid lighten($main_green, 25);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $main_white;
+    width: 170px;
+    height: 38px;
+    padding-top: 8px;
+}
+
+.btn-close,
+.btn-close:hover,
+.btn-close:focus {
+    width: 100%;
+    background: transparent !important;
+    border-color: transparent;
+    text-align: right;
+    color: $main_white !important;
+}
+
+.btn-view-opt,
+a.btn-view-opt {
+    min-width: 100px;
+    padding: 2px 30px;
+    height: 28px;
+    line-height: 22px;
+    color: $btn_view_opt_color;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid $btn_view_opt_color;
+    @include transition-effect;
+}
+
+.btn-view-opt:hover,
+a.btn-view-opt:hover {
+    background-color: $btn_view_opt_color;
+    color: $main_white;
+}

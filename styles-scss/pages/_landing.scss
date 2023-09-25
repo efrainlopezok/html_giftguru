@@ -1,0 +1,37 @@
+.init {
+	&.landing{
+    	margin-top: 100px;
+    }
+}
+
+.prepare {
+	background-image: url("../img/slider_2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+
+	label{
+		color: white;
+	}
+}
+.occasion, .contact-landing {
+    font-size: 13px;
+
+    ul {
+	    padding: 0;
+	    list-style: none;
+	    margin: 0 auto;
+	    max-width: 350px;
+
+	    li {
+	    	line-height: 25px;
+
+	    	&:before{
+	    		content: "\f00c";
+			    font-family: FontAwesome;
+			    color: #90c059;
+			    margin-right: 10px;
+	    	}
+	    }
+	}
+}

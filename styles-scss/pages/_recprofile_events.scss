@@ -1,0 +1,27 @@
+
+body.logged {
+	font-family: $helvetica_regular;
+
+	.list-recipient {
+		border-bottom-width: 1px;
+		margin-bottom: 40px;
+		border-color: #dbdee2;
+
+		hr {
+			border-color: #dbdee2;
+		}
+		.item-recipient {
+			.row {
+				&.btm-spacer { padding-bottom: 6px; }
+				&.top-spacer { padding-top: 17px; }
+			}
+		}
+	}
+
+	.modal {
+		label {
+			font-size: 13px;
+    		font-family: $helvetica_regular,
+		}
+	}
+}

@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Event Single Overview :: Gift Guru</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom FontAwesome styles -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <!-- ToolTips styles -->
+    <link href="styles/jBox.css" rel="stylesheet">
+
+    <!-- Custom SASS styles -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="scripts/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="logged">
+
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 logo">
+                    <a href="index.html">
+                        <img src="./img/giftguru-logo.png" />
+                    </a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-12 r-menu">
+                            <nav class="navbar">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				            </button>
+                                </div>
+                                <div id="navbar" class="main-nav navbar-collapse collapse">
+                                    <ul class="nav nav-pills">
+                                        <li class="active"><a href="#">Upcoming Events</a></li>
+                                        <li><a href="#">My Recipients</a></li>
+                                        <li><a href="#">My Events</a></li>
+                                        <li><a href="#">My Chart</a></li>
+                                        <li><a href="#">Gift History</a></li>
+                                        <li><a href="#">Brands</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 m-profile">
+                            <div class="user-info dropdown">
+                                <a id="user-dropdown" href="#" class="user-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Johnn Doe <span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="user-dropdown">
+                                    <li><a href="#">Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End row and col -->
+            </div>
+        </div>
+
+    </header>
+
+    <section class="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="breadcrumb">Event Overview</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                    <a href="#" class="btn btn-add" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add +</a>
+                    <ul class="dropdown-menu" aria-labelledby="user-dropdown">
+                        <li><a href="#" data-toggle="modal" data-target="#add-event">New Event</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#" data-toggle="modal" data-target="#add-recipient">New Recipient</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active"><span>Christmas</span></li>
+                <li class="breadcrumb-item active"><span>Jim's Birthday</span></li>
+            </ol>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+
+    <article class="page event-overview-single">
+        <div class="container">
+            <div class="events">
+                <!-- Event -->
+                <div class="event">
+                    <div class="row">
+                        <div class="date col-md-2 col-sm-3 col-xs-4">
+                            <div class="center">
+                                <span class="month u-text">November</span>
+                                <span class="day">24</span>
+                                <span class="elapsed-time u-text">4 weeks away</span>
+                            </div>
+                        </div>
+                        <div class="event-info col-md-10 col-sm-9 col-xs-8">
+                            <div class="event-header">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
+                                        <h6>Jim's Birthday » Jim Smith</h6>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="event-action text-right">
+                                            <a href="#" class="people" data-toggle="tooltip" title="Single recipient event"></a>
+                                            <a href="#" class="refresh" data-toggle="tooltip" title="Recurring Event"></a>
+                                            <a href="#" class="overview u-text" data-toggle="modal" data-target="#edit-event">Edit Event</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-data">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-7 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div class="event-detail-title u-text">
+                                                    <h4 class="name-to-event">JIM SMITH</h4>
+                                                </div>
+                                                <div class="event-detail-data">
+                                                    Friend
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div class="event-detail-title u-text">
+                                                    Outreach
+                                                </div>
+                                                <div class="event-detail-data">
+                                                    <a href="" class="gift-e-link"><img src="./img/icon-gift.png" alt=""></a>
+                                                    <a href="" class="gift-e-link"><img src="./img/icon-rose.png" alt=""></a>
+                                                    <a href="" class="gift-e-link"><img src="./img/icon-marker.png" alt=""></a>
+                                                    <a href="" class="gift-e-link"><img src="./img/icon-message.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div class="event-detail-title u-text">
+                                                    Price Range
+                                                </div>
+                                                <div class="event-detail-data">
+                                                    $10.00 - $20.00
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div class="event-detail-title u-text">
+                                                    Interest
+                                                </div>
+                                                <div class="event-detail-data">
+                                                    Football, Golf, Home Improvement, and Books
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-5 col-xs-12">
+                                        <a href="#" class="link-action gray u-text" data-toggle="modal" data-target="#edit-recipient-event">Edit Recipient Event</a>
+                                        <a href="recprofile.html" class="link-action gray u-text">View Recipient Profile</a>
+                                        <a href="#" class="button white-b-green little" data-toggle="modal" data-target="#log-gift">Log a Gift</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Event -->
+
+                <!-- Gift Tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#gift-ideas">Gift Ideas</a></li>
+                    <li><a data-toggle="tab" href="#gift-history">Gift History</a></li>
+                </ul>
+                <!-- / Gift Tabs -->
+
+                <!-- Gift Tabs Content -->
+                <div class="tab-content">
+                    <div id="gift-ideas" class="tab-pane fade in active">
+                        <!-- Product List -->
+                        <div class="products-list" show-items="12">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo_dot.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo Dot (2nd Generation), Black</p>
+                                        <div class="product-price">
+                                            $69.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo, Black</p>
+                                        <div class="product-price">
+                                            $199.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_wireless_speaker.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:1 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $239.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_smart_wireless_5.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:5 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $529.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_smart_wireless_5.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:5 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $529.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo_dot.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo Dot (2nd Generation), Black</p>
+                                        <div class="product-price">
+                                            $69.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo, Black</p>
+                                        <div class="product-price">
+                                            $199.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_wireless_speaker.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:1 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $239.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_wireless_speaker.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:1 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $239.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_smart_wireless_5.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:5 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $529.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo_dot.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo Dot (2nd Generation), Black</p>
+                                        <div class="product-price">
+                                            $69.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo, Black</p>
+                                        <div class="product-price">
+                                            $199.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo, Black</p>
+                                        <div class="product-price">
+                                            $199.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_wireless_speaker.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:1 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $239.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_smart_wireless_5.png" />
+                                        </div>
+                                        <p class="center">SONOS PLAY:5 Smart Wireless Speaker, White</p>
+                                        <div class="product-price">
+                                            $529.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- Product Item -->
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <img src="./img/product_echo_dot.png" />
+                                        </div>
+                                        <p class="center">Amazon Echo Dot (2nd Generation), Black</p>
+                                        <div class="product-price">
+                                            $69.99
+                                        </div>
+                                        <a href="#" class="button green little">Buy on Amazon</a>
+                                    </div>
+                                    <!-- / Product Item -->
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="button gray load-more u-text">Load More</a>
+
+                        </div>
+                        <!-- / Product List -->
+                    </div>
+                    <div id="gift-history" class="tab-pane fade">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Gift Name <span class="sortup"></span>
+                                        </th>
+                                        <th>Event <span class="sortup"></span></th>
+                                        <th class="semibold">Date
+                                            <a id="date-dropdown" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="date-dropdown">
+                                                <li><a href="#">2017</a></li>
+                                                <li><a href="#">2016</a></li>
+                                            </ul>
+                                        </th>
+                                        <th>Amount Spent <span class="sortup"></span></th>
+                                        <th>Notes</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty-row"></tr>
+                                    <tr>
+                                        <td class="nowrap name">beats by Dre headphones</td>
+                                        <td class="event">Jim's Birhtday</td>
+                                        <td class="date">01/02/17</td>
+                                        <td class="amount">$149.99</td>
+                                        <td class="notes">Nasceture consectetur cubila placerat facilisi class necquam suspendise purus nibh fells in scelerisque
+                                            <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom" data-container="body" data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio."
+                                                data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="controls"><input type="checkbox" id="check00">
+                                            <label for="check00" data-toggle="tooltip" title="Market as complete"></label>
+                                        </td>
+                                        <td class="opt-column"><a class="btn btn-view-opt" data-toggle="modal" data-target="#edit-gift">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nowrap name">SONOS PLAY:3 Smart Wireless <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom" data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio."
+                                                data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="event">Jim's Birhtday</td>
+                                        <td class="date">03/02/17</td>
+                                        <td class="amount">$449.99</td>
+                                        <td class="notes">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom"
+                                                data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio." data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="controls"><input type="checkbox" id="check01">
+                                            <label for="check01" data-toggle="tooltip" title="Market as complete"></label> </td>
+                                        <td class="opt-column"><a class="btn btn-view-opt" data-toggle="modal" data-target="#edit-gift">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nowrap name">beats by Dre headphones</td>
+                                        <td class="event">Jim's Birhtday</td>
+                                        <td class="date">01/02/17</td>
+                                        <td class="amount">$149.99</td>
+                                        <td class="notes">Nasceture consectetur cubila placerat facilisi class necquam suspendise purus nibh fells in scelerisque
+                                            <span class="more"><span>...</span></span>
+                                        </td>
+                                        <td class="controls"><input type="checkbox" id="check02" checked="checked"><label for="check02"></label> </td>
+                                        <td class="opt-column"><a class="btn btn-view-opt" data-toggle="modal" data-target="#edit-gift">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nowrap name">SONOS PLAY:3 Smart Wireless <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom" data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio."
+                                                data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="event">Jim's Birhtday</td>
+                                        <td class="date">03/02/17</td>
+                                        <td class="amount">$449.99</td>
+                                        <td class="notes">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom"
+                                                data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio." data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="controls"><input type="checkbox" id="check03"><label for="check03"></label> </td>
+                                        <td class="opt-column"><a class="btn btn-view-opt" data-toggle="modal" data-target="#edit-gift">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nowrap name">beats by Dre headphones</td>
+                                        <td class="event">Jim's Birhtday</td>
+                                        <td class="date">01/02/17</td>
+                                        <td class="amount">$149.99</td>
+                                        <td class="notes">Nasceture consectetur cubila placerat facilisi class necquam suspendise purus nibh fells in scelerisque <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom"
+                                                data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio." data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="controls"><input type="checkbox" id="check04"><label for="check04"></label> </td>
+                                        <td class="opt-column"><a class="btn btn-view-opt" data-toggle="modal" data-target="#edit-gift">Edit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nowrap name">SONOS PLAY:3 Smart Wireless
+                                            <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom" data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio."
+                                                data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="event">Jim's Birhtday</td>
+                                        <td class="date">03/02/17</td>
+                                        <td class="amount">$449.99</td>
+                                        <td class="notes">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                            <span class="more" data-toggle="popover" title="" role="button" tabindex="0" data-trigger="focus" data-placement="bottom" data-content="Nam no iudico commodo sanctus. Duo diam delenit iracundia ex. Ex aeque dicit mei. Est in maiorum salutatus, zril feugiat nostrum et mei. Sea an natum quaestio."
+                                                data-original-title="Popover title"><span>...</span></span>
+                                        </td>
+                                        <td class="controls"><input type="checkbox" id="check05"><label for="check05"></label> </td>
+                                        <td class="opt-column"><a class="btn btn-view-opt" data-toggle="modal" data-target="#edit-gift">Edit</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Gift Tabs Content -->
+
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="index.html"><img src="./img/giftguru-logo.png" class="logo" /></a>
+                </div>
+                <div class="col-md-6 col-sm-8 col-xs-12">
+                    <ul class="footer-menu">
+                        <li><a href="./index.html#howitworks">How It Works</a></li>
+                        <li><a href="./index.html#products">Products</a></li>
+                        <li><a href="./index.html#blog">Blog</a></li>
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./faq.html">Faq</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <ul class="copyright-menu">
+                        <li><a href="./terms_and_conditions.html">Terms & Conditions</a></li>
+                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                        <li>&copy; Gift Docket 2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Update Event -->
+    <div id="edit-event" class="modal fade modal-event">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title u-text">Edit Event</h4>
+                </div>
+                <div class="form-steps">
+                    <form>
+                        <!-- Step Start -->
+                        <div class="step" data-step="update-event">
+                            <div class="modal-body">
+                                <h4 class="center">Edit Event Details</h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="event-type">Event / Event Type</label>
+                                        <select id="event-type" name="event-type">
+	                  	<option value="">Select your event type</option>
+	                  	<option value="e-1" selected>Christmas</option>
+	                  	<option value="e-2">Birthday</option>
+	                  	<option value="e-3">Event Type 3</option>
+	                  	<option value="e-4">Event Type 4</option>
+	                  </select>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="event-name">Event name</label>
+                                        <input type="text" id="event-name" name="event-name" value="Christmas" />
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="event-month">Event Date</label>
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                <select id="event-month" name="event-month">
+	                  	  	<option value="">Month</option>
+	                  	  	<option value="01">January</option>
+	                  	  	<option value="02">February</option>
+	                  	  	<option value="03">March</option>
+	                  	  	<option value="12" selected>December</option>
+	                  	  </select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                <select id="event-day" name="event-day">
+	                  	  	<option value="">DD</option>
+	                  	  	<option value="01">01</option>
+	                  	  	<option value="02">02</option>
+	                  	  	<option value="03">03</option>
+	                  	  	<option value="11">11</option>
+	                  	  	<option value="12">12</option>
+	                  	  	<option value="13">13</option>
+	                  	  	<option value="21">21</option>
+	                  	  	<option value="22">22</option>
+	                  	  	<option value="23">23</option>
+	                  	  	<option value="24">24</option>
+	                  	  	<option value="25" selected>25</option>
+	                  	  	<option value="26">26</option>
+	                  	  </select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                <select id="event-year" name="event-year">
+	                  	  	<option value="">YYYY</option>
+	                  	  	<option value="2017" selected>2017</option>
+	                  	  	<option value="2018">2018</option>
+	                  	  	<option value="2019">2019</option>
+	                  	  </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <label>Event Recurring</label>
+
+                                <div class="row select-radio">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="radio" name="recurring-event" id="recurring-event" value="recurring" checked />
+                                        <label for="recurring-event" class="center">
+		                <span class="input-title u-text">
+		                  Recurring Event
+		                </span>
+		                <p>An event that repeats year after year. <span>Example: Birthday, Christmas, Wedding Anniversary</span></p>
+	                	</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="radio" name="recurring-event" id="one-time-event" value="one-time" />
+                                        <label for="one-time-event" class="center">
+	                    <span class="input-title u-text">
+	                  	One Time Event
+	                    </span>
+	                    <p>An event that occurs only once and does not repeat. <span>Example: Graduation, Baby Shower, Wedding</span></p>
+	                  </label>
+                                    </div>
+                                </div>
+
+                                <div class="action-steps row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 left">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 right">
+                                        <a href="#" class="button blue little button-step" data-step="recipient-event">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Step Start -->
+
+                        <!-- Step Start -->
+                        <div class="step hide" data-step="recipient-event">
+                            <div class="modal-body">
+                                <h4 class="center">Add recipient(s) to event</h4>
+                                <div class="detail-c-event">
+                                    <div class="event">
+                                        <div class="row">
+                                            <div class="date col-md-2 col-sm-2 col-xs-12">
+                                                <div class="center">
+                                                    <span class="month u-text">December</span>
+                                                    <span class="day">25</span>
+                                                </div>
+                                            </div>
+                                            <div class="event-info more col-md-10 col-sm-10 col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <h6>Jim's Birthday</h6>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="event-action text-right">
+                                                            <span class="u-text">One Time Event</span>
+                                                            <a href="#" class="refresh">1</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-recipient">
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button white-b-green little left">Add to Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button white-b-green little left">Add to Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button white-b-green little left">Add to Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button green little left">Remove from Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button white-b-green little left">Add to Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button green little left">Remove from Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                        <!-- Action Recipient -->
+                                        <div class="action-recipient">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-6">
+                                                    <div class="name-recipient">
+                                                        Jim Smith
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                                    <a href="#" class="button green little left">Remove from Event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- / Action Recipient -->
+                                    </div>
+                                </div>
+
+
+                                <div class="row action-steps ">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 left">
+                                        <a href="#" class="button white-b-green little button-step" data-step="update-event">Back</a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 center">
+                                        <a href="#">Create New Recipient</a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 right">
+                                        <input type="submit" class="button blue little" value="Save Event">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Step Start -->
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- / Update Event -->
+
+    <!-- Log Gift -->
+    <div id="log-gift" class="modal fade modal-event">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title u-text">Save Gift Idea</h4>
+                </div>
+                <div class="form-steps">
+                    <form>
+                        <!-- Step Start -->
+                        <div class="step" data-step="update-event">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="gift-name">Gift Name</label>
+                                        <input type="text" name="gift-name" id="gift-name" value="beast by Dre headphones" autofocus />
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="total-amount">Total Amount Spent</label>
+                                        <input type="text" name="total-amount" id="total-amount" value="" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="event-name">Notes</label>
+                                        <textarea id="notes" name="notes" rows="3	"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row action-steps">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-12">
+                                        <input type="checkbox" id="recipient-complete-done" name="recipient-complete-done" />
+                                        <label for="recipient-complete-done">Mark this recipient as complete</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 right">
+                                        <input type="submit" class="button blue little" value="Log Gift">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /Step Start -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Log Gift -->
+
+    <!-- Edit Gift -->
+    <div id="edit-gift" class="modal fade modal-event">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title u-text">Log Gift</h4>
+                </div>
+                <div class="form-steps">
+                    <form>
+                        <!-- Step Start -->
+                        <div class="step" data-step="update-event">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="gift-name">Gift Name</label>
+                                        <input type="text" name="gift-name" id="gift-name" value="beast by Dre headphones" autofocus />
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <label for="total-amount">Total Amount Spent</label>
+                                        <input type="text" name="total-amount" id="total-amount" value="$149.99" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="event-name">Notes</label>
+                                        <textarea id="notes" name="notes" rows="3	">A parturient parturient a lacinia class a ullamcorper ut dictumst consectetur nostra imperdiet cum a phasellus. Adipiscing a semper scelerisque euismod condimentum parturient curae vitae adipiscing interdum velit vestibulum auctor dapibus a suspendisse parturient mus accumsan.</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row action-steps">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-12">
+                                        <input type="checkbox" id="recipient-complete-done-gift" name="recipient-complete-done-gift" />
+                                        <label for="recipient-complete-done-gift">Mark this recipient as complete</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 right">
+                                        <input type="submit" class="button blue little" value="Log Gift">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /Step Start -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Edit Gift -->
+
+    <!-- Edit Recipient Event -->
+    <div id="edit-recipient-event" class="modal fade modal-event">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title u-text">Edit Recipient Event</h4>
+                </div>
+                <div class="form-steps">
+                    <form>
+                        <!-- Step Start -->
+                        <div class="step" data-step="update-event">
+                            <div class="modal-body">
+                                <div class="popup-medium-size">
+                                    <h4 class="center">Spending Price Range & Outreach Type</h4>
+                                    <label for="edit-minimun-price">Spending Price Range</label>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="edit-minimun-price" id="edit-minimun-price" value="" placeholder="Enter Minimun Price" />
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="edit-maximun-price" id="edit-maximun-price" value="" placeholder="Enter Maximun Price" />
+                                        </div>
+                                    </div>
+
+                                    <p class="spaces"></p>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Outreach Type</label>
+                                            <p class="spaces"></p>
+                                            <div class="checkbox-columns">
+                                                <input type="checkbox" id="recipient-phone" name="recipient-phone" />
+                                                <label for="recipient-phone">Phone Call</label>
+
+                                                <input type="checkbox" id="recipient-card" name="recipient-card" />
+                                                <label for="recipient-card">Card</label>
+
+                                                <input type="checkbox" id="recipient-email" name="recipient-email" />
+                                                <label for="recipient-email">Email</label>
+
+                                                <input type="checkbox" id="recipient-gift" name="recipient-gift" />
+                                                <label for="recipient-gift">Gift</label>
+
+                                                <input type="checkbox" id="recipient-tmsg" name="recipient-tmsg" />
+                                                <label for="recipient-tmsg">Text Message</label>
+
+                                            </div>
+                                            <p class="spaces"></p>
+                                            <p class="spaces"></p>
+                                            <label>Looking to edit this recipeient's name, relationship, or interests? <a href="#" class="skip">Click Here</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row action-steps">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-12">
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 right">
+                                        <input type="submit" class="button blue little" value="Save">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /Step Start -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Edit Recipient Event -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')
+    </script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="scripts/slick.min.js"></script>
+    <!-- jBox -->
+    <script src="./scripts/jBox.min.js"></script>
+    <!-- Custom Logged JS -->
+    <script src="./scripts/custom-logged.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/custom.js"></script>
+
+</body>
+
+</html>

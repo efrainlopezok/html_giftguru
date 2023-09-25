@@ -1,0 +1,78 @@
+/*fix on modals*/
+
+.modal {
+    .form-btn-group {
+        input[type="checkbox"]+label:before {
+            top: -1px;
+        }
+        label {
+            padding-left: 20px !important;
+        }
+        .btn {
+            font-size: 13px;
+            font-family: $helvetica_medium;
+        }
+    }
+    &.green-h-popup {
+        top: 80px;
+        .modal-dialog {
+            max-width: 600px !important;
+        }
+        // .modal-header {
+        //     background: #8fc158;
+        //     h4 {
+        //         color: white;
+        //         font-size: 15px;
+        //         font-family: "HelveticaNeueBold";
+        //         padding: 0;
+        //         letter-spacing: 0;
+        //     }
+        //     .close {
+        //         color: white;
+        //         opacity: 1;
+        //     }
+        // }
+    }
+    &.modal-top-80 {
+        margin-top: 80px;
+    }
+    &.modal.modal-top-20vh {
+        margin-top: 20vh;
+    }
+}
+
+@media only screen and (max-width: $mobile_size) {
+    .modal {
+        &.green-h-popup {
+            top: 70px;
+            .modal-header {
+                background: #8fc158;
+                padding: 15px 25px;
+                border-bottom: 1px solid #dbdfe3;
+                h4 {
+                    color: white;
+                    font-size: 15px;
+                    font-family: "HelveticaNeueBold";
+                    padding: 0;
+                    letter-spacing: 0;
+                }
+                .close {
+                    color: white;
+                    opacity: 1;
+                }
+            }
+            .modal-dialog {
+                margin-top: 0;
+            }
+            .modal-content {
+                border: none;
+            }
+            .modal-body {
+                padding: 0px 30px 20px;
+                .add-event-body {
+                    min-height: calc(100vh - 160px);
+                }
+            }
+        }
+    }
+}

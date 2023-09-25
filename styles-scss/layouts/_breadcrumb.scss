@@ -1,0 +1,35 @@
+/* Breadcrumb */
+
+.breadcrumb-section {
+    position: absolute;
+    top: 125px;
+    width: 100%;
+}
+
+
+.breadcrumb {
+    margin-bottom: 0;
+    position: absolute;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: $helvetica_regular;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 0;
+
+    a {
+	    text-decoration: underline;
+	}
+	.active {
+	    color: $main_green;
+
+	    &:before {
+		    content: '»';
+		    color: $main_text;
+		}
+
+		span {
+			text-decoration: underline;
+		}
+	}
+}

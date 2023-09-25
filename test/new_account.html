@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>New Account :: Gift Docket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom FontAwesome styles -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom SASS styles -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="scripts/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="logged">
+
+	<header class="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 logo">
+					<a href="index.html">
+						<img src="./img/logo.png" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-12"><div class="row">
+					<div class="col-md-9 col-sm-9 col-xs-12 r-menu">
+						<nav class="navbar">
+						<div class="navbar-header">
+				            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				            </button>
+				        </div>
+						<div id="navbar" class="main-nav navbar-collapse collapse">
+							<ul  class="nav nav-pills">
+								<li><a href="./upcoming-events.html">Upcoming Events</a></li>
+								<li><a href="./my_recipients.html">My Recipients</a></li>
+								<li><a href="./my_events.html">My Events</a></li>
+								<li><a href="./gift_history.html">Gift History</a></li>
+								<li><a href="./brands.html">Brands</a></li>
+							</ul>
+						</div>
+						</nav>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12 m-profile">
+						<div class="user-info dropdown">
+							<a id="user-dropdown" href="#" class="user-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Johnn Doe <span class="caret"></span></a>
+							<ul class="dropdown-menu" aria-labelledby="user-dropdown">
+								<li><a href="profile.html">Profile</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="./index.html">Log Out</a></li>
+					        </ul>
+						</div>
+					</div>
+				</div></div> <!--End row and col -->
+			</div>
+		</div>
+		
+	</header>
+
+	<section class="sidebar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="breadcrumb">Upcoming Events</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 text-right">
+					<a href="#" class="btn btn-add"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add +</a>
+					<ul class="dropdown-menu" aria-labelledby="user-dropdown">
+						<li><a href="#" data-toggle="modal" data-target="#add-event">New Event</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#" data-toggle="modal" data-target="#add-recipient">New Recipient</a></li>
+			        </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<article class="page upcoming-events">
+		<div class="container">
+			<div class="events">
+				<!-- Event -->
+				<div class="event">
+					<div class="row">
+						<div class="date col-md-2 col-sm-3 col-xs-4">
+							<div class="center">
+								<span class="month u-text">November</span>
+								<span class="day">24</span>
+								<span class="elapsed-time u-text">4 weeks away</span>
+							</div>
+						</div>
+						<div class="event-info col-md-10 col-sm-9 col-xs-8">
+							<div class="event-header">
+								<div class="row">
+									<div class="col-md-8 col-sm-8 col-xs-12">
+										<h6>Jim's Birthday</h6>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-12">
+										<div class="event-action text-right">
+											<a href="#" class="people"></a>
+											<a href="#" class="refresh"></a>
+											<a href="#" class="overview u-text">Event Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jim Smith
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Friend
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$10.00 - $20.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Football, Golf, Home Improvement, and Books
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / Event -->
+
+				<!-- Event -->
+				<div class="event">
+					<div class="row">
+						<div class="date col-md-2 col-sm-3 col-xs-4">
+							<div class="center">
+								<span class="month u-text">December</span>
+								<span class="day">3</span>
+								<span class="elapsed-time u-text">6 weeks away</span>
+							</div>
+						</div>
+						<div class="event-info col-md-10 col-sm-9 col-xs-8">
+							<div class="event-header">
+								<div class="row">
+									<div class="col-md-8 col-sm-8 col-xs-12">
+										<h6>Wedding Anniversary</h6>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-12">
+										<div class="event-action text-right">
+											<a href="#" class="people"></a>
+											<a href="#" class="refresh"></a>
+											<a href="#" class="overview u-text">Event Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jane Smith
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Wife
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Gardening, Home Decor, Travel, and Cooking
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- / Event -->
+
+				<!-- Event -->
+				<div class="event">
+					<div class="row">
+						<div class="date col-md-2 col-sm-3 col-xs-4">
+							<div class="center">
+								<span class="month u-text">December</span>
+								<span class="day">25</span>
+								<span class="elapsed-time u-text">9 weeks away</span>
+							</div>
+						</div>
+						<div class="event-info more view col-md-10 col-sm-9 col-xs-8">
+							<div class="event-header">
+								<div class="row">
+									<div class="col-md-8 col-sm-8 col-xs-12">
+										<h6>Christmas</h6>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-12">
+										<div class="event-action text-right">
+											<a href="#" class="people"></a>
+											<a href="#" class="refresh">1</a>
+											<a href="#" class="overview u-text">Event Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jane Smith
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Wife
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Gardening, Home Decor, Travel, and Cooking
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jane Smith
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Wife
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-3 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Gardening, Home Decor, Travel, and Cooking
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+							<div class="more-recipients">
+								<a href="#" class="button gray little u-text">+ View 30 more recipients</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / Event -->
+
+			</div>
+		</div>
+	</article>
+
+	<!-- Partners Section -->
+    <section class="page partners">
+      <div class="container">
+        <h6 class="center medium">Discover great brands</h6>
+        <div class="row">
+          <div class="partner col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-image" style="background-image: url(./img/bg_partners_1.jpg);">
+              <img src="./img/logo_nike.png" />
+            </div>
+            <h6 class="bold">Nike Sportwear</h6>
+            <p>Aptent condimentum proin dis cum vel leo nam ultrices a a neque a vestibulum adipiscing. Sodales a eu vitae et leo proin scelerisque pharetra vestibulum non nisi dis pulvinar tincidunt in tellus a porttitor mi semper facilisi.</p>
+          </div>
+          <div class="partner col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-image" style="background-image: url(./img/bg_partners_2.jpg);">
+              <img src="./img/logo_rhone.png" />
+            </div>
+            <h6 class="bold">Rhone Apparel</h6>
+            <p>Nam a platea consectetur ac a adipiscing adipiscing vestibulum suspendisse rutrum quisque a luctus sem nibh tristique quisque laoreet dis.Ullamcorper parturient egestas tellus hac habitant ad ut a a aenean quam.</p>
+          </div>
+          <div class="partner col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-image" style="background-image: url(./img/bg_partners_3.jpg);">
+              <img src="./img/logo_beats.png" />
+            </div>
+            <h6 class="bold">beats</h6>
+            <p>Porta condimentum a parturient aliquet lacus hac parturient hac urna a eu egestas ac rutrum cum aliquet conubia a phasellus non condimentum curae hendrerit.Inceptos mi cum mi a ac aliquet tincidunt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / Partners Section -->
+
+    <article class="upcoming-events">
+		<div class="container">
+			<div class="events">
+				<!-- Event -->
+				<div class="event">
+					<div class="row">
+						<div class="date col-md-2 col-sm-3 col-xs-4">
+							<div class="center">
+								<span class="month u-text">January</span>
+								<span class="day">3</span>
+								<span class="elapsed-time u-text">11 weeks away</span>
+							</div>
+						</div>
+						<div class="event-info col-md-10 col-sm-9 col-xs-8">
+							<div class="event-header">
+								<div class="row">
+									<div class="col-md-8 col-sm-8 col-xs-12">
+										<h6>Jimmy's Birthday</h6>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-12">
+										<div class="event-action text-right">
+											<a href="#" class="people"></a>
+											<a href="#" class="refresh"></a>
+											<a href="#" class="overview u-text">Event Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jimmy Doe
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Son
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$10.00 - $20.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Phone Call
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Hockey, NASCAR, Action Figures, and Pokemon
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / Event -->
+
+				<!-- Event -->
+				<div class="event">
+					<div class="row">
+						<div class="date col-md-2 col-sm-3 col-xs-4">
+							<div class="center">
+								<span class="month u-text">Fabruary</span>
+								<span class="day">8</span>
+								<span class="elapsed-time u-text">16 weeks away</span>
+							</div>
+						</div>
+						<div class="event-info col-md-10 col-sm-9 col-xs-8">
+							<div class="event-header">
+								<div class="row">
+									<div class="col-md-8 col-sm-8 col-xs-12">
+										<h6>Jennifer's Baby Shower</h6>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-12">
+										<div class="event-action text-right">
+											<a href="#" class="people"></a>
+											<a href="#" class="refresh"></a>
+											<a href="#" class="overview u-text">Event Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jennifer Anderson
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Sister
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Baby Accessories, Home Decor, and Plants
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- / Event -->
+
+				<!-- Event -->
+				<div class="event">
+					<div class="row">
+						<div class="date col-md-2 col-sm-3 col-xs-4">
+							<div class="center">
+								<span class="month u-text">Fabruary</span>
+								<span class="day">14</span>
+								<span class="elapsed-time u-text">17 weeks away</span>
+							</div>
+						</div>
+						<div class="event-info more col-md-10 col-sm-9 col-xs-8">
+							<div class="event-header">
+								<div class="row">
+									<div class="col-md-8">
+										<h6>Valentine's Day</h6>
+									</div>
+									<div class="col-md-4">
+										<div class="event-action text-right">
+											<a href="#" class="people"></a>
+											<a href="#" class="refresh">1</a>
+											<a href="#" class="overview u-text">Event Overview</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Jane Smith
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Wife
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Gardening, Home Decor, Travel, and Cooking
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Julie Doe
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Daughter
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Barbie, American Girl, and Shoes
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="event-data">
+								<div class="row">
+									<div class="col-md-9 col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Recipient
+												</div>
+												<div class="event-detail-data">
+													Julie Doe
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Relationship
+												</div>
+												<div class="event-detail-data">
+													Daughter
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Price Range
+												</div>
+												<div class="event-detail-data">
+													$100.00 - $200.00
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Outreach Type
+												</div>
+												<div class="event-detail-data">
+													Gift, Email
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-6 col-xs-12">
+												<div class="event-detail-title u-text">
+													Interests
+												</div>
+												<div class="event-detail-data">
+													Barbie, American Girl, and Shoes
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 col-xs-12">
+										<a href="#" class="button green little">Find a Gift</a>
+										<a href="#" class="button white-b-green little">Log a Gift</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- / Event -->
+
+			</div>
+		</div>
+	</article>
+
+	<!-- Partners Section -->
+    <section class="page partners">
+      <div class="container">
+        <h6 class="center medium">Discover great brands</h6>
+        <div class="row">
+          <div class="partner col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-image" style="background-image: url(./img/bg_partners_1.jpg);">
+              <img src="./img/logo_nike.png" />
+            </div>
+            <h6 class="bold">Nike Sportwear</h6>
+            <p>Aptent condimentum proin dis cum vel leo nam ultrices a a neque a vestibulum adipiscing. Sodales a eu vitae et leo proin scelerisque pharetra vestibulum non nisi dis pulvinar tincidunt in tellus a porttitor mi semper facilisi.</p>
+          </div>
+          <div class="partner col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-image" style="background-image: url(./img/bg_partners_2.jpg);">
+              <img src="./img/logo_rhone.png" />
+            </div>
+            <h6 class="bold">Rhone Apparel</h6>
+            <p>Nam a platea consectetur ac a adipiscing adipiscing vestibulum suspendisse rutrum quisque a luctus sem nibh tristique quisque laoreet dis.Ullamcorper parturient egestas tellus hac habitant ad ut a a aenean quam.</p>
+          </div>
+          <div class="partner col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-image" style="background-image: url(./img/bg_partners_3.jpg);">
+              <img src="./img/logo_beats.png" />
+            </div>
+            <h6 class="bold">beats</h6>
+            <p>Porta condimentum a parturient aliquet lacus hac parturient hac urna a eu egestas ac rutrum cum aliquet conubia a phasellus non condimentum curae hendrerit.Inceptos mi cum mi a ac aliquet tincidunt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / Partners Section -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"><img src="./img/logo_footer.png" class="logo" /></a>
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-12">
+            <ul class="footer-menu">
+              <li><a href="./index.html#howitworks">How It Works</a></li>
+              <li><a href="./index.html#products">Products</a></li>
+              <li><a href="./index.html#blog">Blog</a></li>
+              <li><a href="./index.html#about">About</a></li>
+              <li><a href="./faq.html">Faq</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-12">
+            <ul class="copyright-menu">
+              <li><a href="./terms_and_conditions.html">Terms & Conditions</a></li>
+              <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+              <li>&copy; Gift Docket 2017</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- / Footer -->
+
+    <!-- Get Started -->
+    <a href="#" class="auto-open hide" data-toggle="modal" data-target="#get-started">data</a>
+    <div id="get-started" class="modal fade get-started">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <a href="#" data-toggle="modal" data-target="#account-setup">
+            <img src="./img/icon_big_calendar.png" />
+            <p>To get started, your need to create <strong>a recipient</strong> or <strong>an event</strong></p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- / Get Started -->
+
+    <!-- Account Setup -->
+    <div id="account-setup" class="modal fade account-setup big-modal">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title u-text">Account Setup</h4>
+          </div>
+          <div class="form-steps">
+          	<form>
+          	  <!-- Step Start -->
+          	  <div class="step" data-step="start">
+	            <div class="modal-body center">
+	          	  <img src="./img/icon_clock.png" />
+	          	  <h4>Account Setup</h4>
+	              <p>This will be a description of why the user will need to go through a set up process. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+	              <a href="#" class="button blue little button-step" data-step="interest">Get Started</a>
+	              <a href="#" class="skip u-text">Skip account setup</a>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="interest">
+	            <div class="modal-body">
+	              <div class="row">
+	                <div class="data-form col-md-9 col-sm-8 col-xs-12">
+	                  <div class="data-form-content">
+		          	  	<h6>Personal Interest</h6>
+		              	<p>Add Recipient Interest</p>
+		              	<div class="row checkbox-button">
+		              	  <div class="col-md-4 col-sm-4 col-xs-12">
+		              	  	<input type="checkbox" value="sports" name="sports" id="sports" />
+		              	  	<label for="sports">Sports</label>
+
+		              	  	<input type="checkbox" value="improvement" name="improvement" id="improvement" />
+		              	  	<label for="improvement">Home Improvement</label>
+
+		              	  	<input type="checkbox" value="automotive" name="automotive" id="automotive" />
+		              	  	<label for="automotive">Automotive</label>
+
+		              	  	<input type="checkbox" value="gardening" name="gardening" id="gardening" />
+		              	  	<label for="gardening">Gardening</label>
+		              	  </div>
+		              	  <div class="col-md-4 col-sm-4 col-xs-12">
+		              	  	<input type="checkbox" value="apparel" name="apparel" id="apparel" />
+		              	  	<label for="apparel">Apparel</label>
+
+		              	  	<input type="checkbox" value="baby" name="baby" id="baby" />
+		              	  	<label for="baby">Baby Gear</label>
+
+		              	  	<input type="checkbox" value="bath" name="bath" id="bath" />
+		              	  	<label for="bath">Bath & Body</label>
+
+		              	  	<input type="checkbox" value="outdoors" name="outdoors" id="outdoors" />
+		              	  	<label for="outdoors">Outdoors</label>
+		              	  </div>
+		              	  <div class="col-md-4 col-sm-4 col-xs-12">
+		              	  	<input type="checkbox" value="technology" name="technology" id="technology" />
+		              	  	<label for="technology">Technology</label>
+
+		              	  	<input type="checkbox" value="health" name="health" id="health" />
+		              	  	<label for="health">Health & Wellness</label>
+
+		              	  	<input type="checkbox" value="keepstakes" name="keepstakes" id="keepstakes" />
+		              	  	<label for="keepstakes">Keepstakes</label>
+
+		              	  	<input type="checkbox" value="toys" name="toys" id="toys" />
+		              	  	<label for="toys">Toys</label>
+		              	  </div>
+		              	</div>
+		              
+		              	<div class="add-interest">
+		              	
+		              	  <p>Add an Interest</p>
+
+		                  <div class="row add-interest">
+		              	    <div class="col-md-10 col-sm-9 col-xs-12">
+		              	      <input type="text" placeholder="Enter interest name" />
+		              	    </div>
+		              	    <div class="col-md-2 col-xs-3 col-xs-12">
+		              	      <a href="#" class="button green little">Add</a>
+		              	    </div>
+		              	  </div>
+		                </div>
+		              </div>
+		            </div>
+		            <div class="detail-form bg-light-gray center col-md-3 col-sm-4 col-xs-12">
+		              <div class="detail-form-content">
+		              	<p><strong>1/2</strong></p>
+		              	<img src="./img/icon_big_people.png" />
+		              	<h6 class="title-step">Personal Interest</h6>
+		              	<p>This could be a description of what the platform will do with the users data in this step. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+		              	<a href="#" class="skip u-text">Skip this step</a>
+		              </div>
+		            </div>
+		          </div>
+
+	            </div>
+
+	            <div class="modal-footer">
+	              <div class="row">
+	              	<div class="col-md-5 col-sm-5 col-xs-12">
+	              	</div>
+	              	<div class="col-md-7 col-sm-7 col-xs-12">
+	              	  <div class="row">
+	              	  	<div class="col-md-7 col-sm-7 col-xs-12">
+	              	  	  <a href="#" class="skip u-text" data-dismiss="modal">Skip all account setup</a>
+	              	  	</div>
+	              	  	<div class="col-md-5 col-sm-5 col-xs-12 center">
+	              	  	  <a href="#" class="button blue little button-step" data-step="preferences">Next</a>
+	              	  	</div>
+	              	  </div>
+	              	</div>
+	              </div>
+	            </div>
+              </div>
+              <!-- /Step Start -->
+
+              <!-- Step Start -->
+          	  <div class="step hide" data-step="preferences">
+	            <div class="modal-body">
+	              <div class="row">
+	                <div class="data-form col-md-9 col-sm-8 col-xs-12">
+	                  <div class="data-form-content">
+		          	    <h6>Communication Preferences</h6>
+		                <p>Notifications are organized by outreach type and will be will be sent via email and at the frequency defined below.</p>
+		                <div class="data-table">
+			                <table class="table table-striped">
+			                  <tbody>
+			                    <tr>
+			                      <td><strong>Gift</strong></td>
+			                      <td><input type="checkbox" value="gift-4-week" name="gift-4-week" id="gift-4-week" />
+			              	  	  <label for="gift-4-week">4 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="gift-2-week" name="gift-2-week" id="gift-2-week" />
+			              	  	  <label for="gift-2-week">2 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="gift-1-week" name="gift-1-week" id="gift-1-week" />
+			              	  	  <label for="gift-1-week">1 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="gift-none" name="gift-none" id="gift-none" />
+			              	  	  <label for="gift-none">None</label></td>
+			                    </tr>
+
+			                    <tr>
+			                      <td><strong>Card</strong></td>
+			                      <td><input type="checkbox" value="card-4-week" name="card-4-week" id="card-4-week" />
+			              	  	  <label for="card-4-week">4 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="card-2-week" name="card-2-week" id="card-2-week" />
+			              	  	  <label for="card-2-week">2 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="card-1-week" name="card-1-week" id="card-1-week" />
+			              	  	  <label for="card-1-week">1 weeks</label></td>
+
+			              	  	  <td><input type="checkbox" value="card-none" name="card-none" id="card-none" />
+			              	  	  <label for="card-none">None</label></td>
+			                    </tr>
+
+			                    <tr>
+			                      <td><strong>Call/Text/Visit </strong></td>
+			                      <td><input type="checkbox" value="call-1-day" name="call-1-day" id="call-1-day" />
+			              	  	  <label for="call-1-day">4 day</label></td>
+
+			              	  	  <td><input type="checkbox" value="call-day-of" name="call-day-of" id="call-day-of" />
+			              	  	  <label for="call-day-of">Day of</label></td>
+
+			              	  	  <td><input type="checkbox" value="call-none" name="call-none" id="call-none" />
+			              	  	  <label for="call-none">None</label></td>
+			                    </tr>
+
+			                    
+			                  </tbody>
+			                </table>
+			            </div>
+		              </div>
+		            </div>
+		            <div class="detail-form bg-light-gray center col-md-3 col-sm-4 col-xs-12 col-xs-12">
+		              <div class="detail-form-content">
+		              	<p><strong>2/2</strong></p>
+		              	<img src="./img/icon_clock.png" />
+		              	<h6 class="title-step">Communication Preferences</h6>
+		              	<p>This could be a description of what the platform will do with the users data in this step. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+		              	<a href="#" class="skip u-text">Skip this step</a>
+		              </div>
+		            </div>
+		          </div>
+
+	            </div>
+
+	            <div class="modal-footer">
+	              <div class="row">
+	              	<div class="col-md-5 col-sm-5 col-xs-12">
+	              	  <a href="#" class="button white-b-green little button-step" data-step="interest">Back</a>
+	              	</div>
+	              	<div class="col-md-7 col-sm-7 col-xs-12">
+	              	  <div class="row">
+	              	  	<div class="col-md-7 col-sm-7 col-xs-12">
+	              	  	  <a href="#" class="skip u-text" data-dismiss="modal">Skip all account setup</a>
+	              	  	</div>
+	              	  	<div class="col-md-5 col-sm-5 col-xs-12 center">
+	              	  	  <input type="submit" class="button blue little" value="Finish Setup" />
+	              	  	</div>
+	              	  </div>
+	              	</div>
+	              </div>
+	            </div>
+
+	            <!-- </div> -->
+
+              	</div>
+              </div>
+              <!-- /Step Start -->
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- / Account Setup -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')</script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="scripts/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/custom.js"></script>
+
+    <!-- Custom New Account Script -->
+    <script>
+    	jQuery(window).load(function(){
+		    /*
+		    Auto Open Popup
+		    ----------------*/
+		    jQuery('.auto-open').trigger('click');
+		});
+
+		jQuery('.get-started a').click(function(){
+			jQuery('#get-started').modal('hide');
+		});
+    </script>
+  </body>
+</html>
